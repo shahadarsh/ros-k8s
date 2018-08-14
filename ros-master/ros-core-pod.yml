@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod 
+metadata:
+  name: ros-core
+  labels:
+    app: ros-core
+spec:
+  containers:
+  - name: ros-core
+    image: ros:kinetic-ros-core
+    ports:
+    - containerPort: 11311
+    args: 
+    - roscore

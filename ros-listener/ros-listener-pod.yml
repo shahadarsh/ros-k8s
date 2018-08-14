@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod 
+metadata:
+  name: ros-listener
+  labels:
+    app: ros-listener
+spec:
+  containers:
+  - name: ros-listener
+    image: shahadarsh/ros-talker-listener:latest
+    env:
+    - name: ROS_HOSTNAME
+      value: listener
+    - name: ROS_MASTER_URI
+      value: http://ros-core:11311
+    args:
+    - rosrun
+    - roscpp_tutorials
+    - listener
