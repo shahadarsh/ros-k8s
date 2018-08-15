@@ -6,5 +6,5 @@ ROS deployments to K8s on AWS with CI/CD pipeline
 * Install Minukube: https://kubernetes.io/docs/tasks/tools/install-minikube/ 
 * `minikube start`
 * Install kubectl: https://kubernetes.io/docs/tasks/tools/install-kubectl 
-* Deploy: `./deploy.sh create`
-* Delete: `./deploy.sh delete`
+* Deploy: `kubectl create -R -f ../ros-k8s`
+* Delete: `kubectl delete -R -f ../ros-k8s`

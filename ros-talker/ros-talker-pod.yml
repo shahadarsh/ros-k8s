@@ -15,5 +15,5 @@ spec:
       value: http://ros-core:11311
     args:
     - rosrun
-    - roscpp_tutorials
-    - talker
+    - rospy_tutorials 
+    - talker.py
