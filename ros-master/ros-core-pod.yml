@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: ros-core
   labels:
-    app: ros-core
+    app: ros-talker-listener
 spec:
   containers:
   - name: ros-core
